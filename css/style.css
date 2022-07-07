@@ -610,4 +610,11 @@ ul.pricing__item{
   line-height: 17px;
   letter-spacing: 1.2px;
   color: #242121;
+} 
+ 
+.clients__list{ 
+  padding: 70px 0 95px; 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center;
 }
