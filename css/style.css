@@ -72,7 +72,7 @@ body{
    max-width: 1190px; 
    padding: 0 10px; 
    margin: 0 auto; 
-   border:1px solid transparent;
+   border:1px solid green;
 }   
  
 .title{ 
@@ -617,4 +617,56 @@ ul.pricing__item{
   display: flex; 
   justify-content: space-around; 
   align-items: center;
+} 
+ 
+.connection{ 
+  padding: 145px 0 160px;  
+  background-image: url("../images/map.jpg"); 
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right 65%;
+}  
+
+.form{  
+  max-width:570px;
+}
+
+.form input, 
+.form textarea{ 
+  border:none;  
+  display:block; 
+  width:100%;
+  border-bottom:2px solid #373A39; 
+  padding: 16px 0; 
+  margin-bottom: 16px; 
+  font-weight: 700;
+} 
+ 
+form input::placeholder, 
+form textarea::placeholder{ 
+  font-size: 12px;
+  line-height: 20px;  
+  letter-spacing: 3.70909px;
+  color: #B8B8B8;  
+  text-transform: uppercase;  
+  font-weight: 300;
+} 
+ 
+form textarea{ 
+  min-height:140px; 
+  resize:none;
+} 
+ 
+form button{ 
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px; 
+  color:#FFF; 
+  text-transform: uppercase; 
+  padding: 17px 70px 15px; 
+  border:none; 
+  background: #242121; 
+  cursor: pointer; 
+  margin-top: 40px; 
+  letter-spacing:2px;
 }
