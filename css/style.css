@@ -669,4 +669,62 @@ form button{
   cursor: pointer; 
   margin-top: 40px; 
   letter-spacing:2px;
+} 
+  
+.footer__top{ 
+  padding: 110px 10px 60px; 
+  background-color: #333; 
+  text-align: center;
+} 
+ 
+.footer__logo{ 
+  display:inline-block; 
+  padding: 0 35px 4px; 
+  border-bottom: 2px solid #FCBB08; 
+  margin-bottom: 70px;
+} 
+ 
+ul .footer__social{ 
+  display:flex; 
+  justify-content: center; 
+  margin-bottom: 70px;
+
+} 
+ 
+.footer__social-list{ 
+  padding: 0 15px;
+} 
+ 
+.footer__social-link{ 
+  font-weight: 300; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 4px;
+  color: #FFF; 
+  letter-spacing: 4px;
+} 
+ 
+.footer__contact{ 
+  font-size: 14px;
+  line-height: 32px; 
+  color:#fff; 
+  margin-bottom: 57px;
+} 
+ 
+.footer__contact a { 
+  display: block; 
+  margin: 10px 0; 
+  color:#fff;
+} 
+  
+.go-top{ 
+  display: inline-block;
+} 
+ 
+.foore__copy{ 
+  padding: 40px 10px; 
+  text-align: center; 
+  color:#ccc; 
+  background: #2A2C2B;
 }
