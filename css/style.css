@@ -773,7 +773,8 @@ ul .footer__social{
   .expertise, 
   .portfolio, 
   .slider-blog, 
-  .team{ 
+  .team, 
+  .pricing{ 
     padding: 75px 0;
   } 
    
@@ -794,7 +795,8 @@ ul .footer__social{
     margin-right: 0; 
   } 
    
-  .team__items{ 
+  .team__items, 
+  .pricing__items{ 
     gap: 20px;
   }
 
@@ -977,7 +979,16 @@ ul .footer__social{
     font-size: 24px; 
     line-height: 32px;
    }
-
+ 
+   .pricing__items{ 
+    display: block;
+   } 
+    
+   ul.pricing__item{ 
+    margin: 0 auto 25px; 
+    max-width: 500px; 
+    width: 100%;
+   }
 } 
   
 @media(max-width:640px) {    
