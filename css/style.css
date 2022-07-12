@@ -691,7 +691,7 @@ form button{
   margin-bottom: 70px;
 } 
  
-ul .footer__social{ 
+ul.footer__social{ 
   display:flex; 
   justify-content: center; 
   margin-bottom: 70px;
@@ -765,7 +765,9 @@ ul .footer__social{
     display: block;
   } 
   .about__title, 
-  .team__title{ 
+  .team__title, 
+  .pricing__title, 
+  .connection__title { 
     margin-bottom: 50px;
   } 
    
@@ -774,7 +776,9 @@ ul .footer__social{
   .portfolio, 
   .slider-blog, 
   .team, 
-  .pricing{ 
+  .pricing,  
+  .clients,
+  .connection{ 
     padding: 75px 0;
   } 
    
@@ -848,9 +852,35 @@ ul .footer__social{
 .portfolio__filter-btn{ 
   margin-top: 40px;
 } 
-
-}
  
+.connection{ 
+  background-image: none;
+}  
+ 
+.form{ 
+  max-width: 100%;
+}  
+ 
+.footer__top{ 
+  padding-top: 75px;
+} 
+ 
+.footer__logo{ 
+  margin-bottom: 40px;
+} 
+ 
+ul.footer__social{ 
+  margin-bottom: 40px; 
+  flex-wrap: wrap;
+} 
+
+.footer__social-list{ 
+   width: 33.333%; 
+   margin-bottom: 25px;
+}
+
+} 
+
 @media(max-width:768px){ 
   .menu__list{ 
     position: absolute; 
@@ -998,7 +1028,8 @@ ul .footer__social{
     
    .clients__list li{ 
     margin-bottom: 25px;
-   }
+   } 
+    
 } 
   
 @media(max-width:640px) {    
@@ -1033,11 +1064,15 @@ ul .footer__social{
     line-height: 42px;
   }
 
-  .portfolio__numbers-item{ 
+  .portfolio__numbers-item {
     width: 100%;
- } 
-  
-} 
+  }
+
+  .footer__social-list {
+    width: 50%;
+  }
+
+}
  
 @media(max-width:340px) {  
 
