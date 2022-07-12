@@ -105,7 +105,7 @@ body{
 } 
  
 .menu__list{ 
-  display: flex;
+  display: flex; 
 } 
   
 .menu__btn{ 
@@ -325,7 +325,7 @@ body{
 }   
 
 .portfolio__filter-btn{ 
-  margin-right: 40px;
+  margin-right: 65px;
 } 
 
 .portfolio-btn{ 
@@ -338,10 +338,13 @@ body{
   color:#333; 
   letter-spacing: 2px; 
   text-transform: uppercase; 
-  padding:0 4px 5px;
-  margin-right: 25px;  
+  padding:0 4px 5px;  
   outline:none;
-} 
+}  
+ 
+.portfolio-btn + .portfolio-btn { 
+  margin-left: 25px;
+}
 
 .mixitup-control-active{ 
   border-bottom: 1px solid #FCBB08;
@@ -748,7 +751,8 @@ ul .footer__social{
   } 
    
   .about, 
-  .expertise{ 
+  .expertise, 
+  .portfolio{ 
     padding: 75px 0;
   } 
    
@@ -763,7 +767,12 @@ ul .footer__social{
    
   .expertise__title{ 
     margin-bottom: 50px;
-  }
+  } 
+   
+  .portfolio__filter-btn{ 
+    margin-right: 0; 
+  } 
+  
 } 
  
 @media(max-width:992px){  
@@ -796,7 +805,22 @@ ul .footer__social{
 
 .magic__title{ 
   margin-bottom: 50px;
-}
+} 
+ 
+.portfolio__content {
+  column-count: 3;
+  margin-bottom: 40px;
+} 
+ 
+.portfolio__top{ 
+  display: block; 
+  margin-bottom: 50px;
+} 
+ 
+.portfolio__filter-btn{ 
+  margin-top: 40px;
+} 
+
 }
  
 @media(max-width:768px){ 
@@ -873,6 +897,47 @@ ul .footer__social{
   .title{ 
     font-size: 48px; 
     line-height: 60px;
+  } 
+   
+   .portfolio__content {
+    column-count: 2;  
+    column-gap: 10px
+  } 
+   
+  .portfolio__item{ 
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-btn{ 
+    display: block; 
+    margin-bottom: 30px; 
+    font-size: 15px;
+  }
+ 
+  .portfolio-btn +  .portfolio-btn { 
+    margin-left: 0;
+  } 
+   
+  .portfolio__add{ 
+    margin-bottom: 40px;
+  } 
+    
+  .blockquote{ 
+    margin-bottom: 40px; 
+    padding: 0 10px;
+  } 
+   
+  .portfolio__video{ 
+    margin-bottom: 75px;
+  } 
+   
+  .portfolio__numbers{ 
+    flex-wrap: wrap; 
+  } 
+   
+  .portfolio__numbers-item{ 
+    width: 50%; 
+    margin-bottom: 40px;
   }
 } 
  
@@ -893,6 +958,9 @@ ul .footer__social{
     line-height: 42px;
   }
 
+  .portfolio__numbers-item{ 
+    width: 100%;
+ }
 
 } 
  
@@ -900,5 +968,6 @@ ul .footer__social{
   .expertise__item{ 
     padding-left: 0; 
     padding-top: 60px;
-  }
+  } 
+  
 }
