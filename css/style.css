@@ -739,7 +739,25 @@ ul .footer__social{
 @media(max-width:1440px){   
   .magic__inner { 
     padding: 50px 0;
-  }
+  }  
+
+  .slick-prev { 
+   left: 0;  
+   z-index: 5;
+  }  
+   
+  .slick-next { 
+    right: 0; 
+   }   
+    
+   .slider-blog__item {
+    padding: 120px 60px;
+  } 
+   
+    ul.slick-dots{ 
+    margin-left: 60px;
+   } 
+
 }
  
 @media(max-width:1200px){  
@@ -752,7 +770,8 @@ ul .footer__social{
    
   .about, 
   .expertise, 
-  .portfolio{ 
+  .portfolio, 
+  .slider-blog{ 
     padding: 75px 0;
   } 
    
@@ -938,7 +957,21 @@ ul .footer__social{
   .portfolio__numbers-item{ 
     width: 50%; 
     margin-bottom: 40px;
-  }
+  } 
+   
+  .slider-blog__item {
+    padding: 40px 0px;
+  } 
+   
+    ul.slick-dots{ 
+    margin-left: 0px;
+   }   
+    
+   .slider-blog__item-title{ 
+    font-size: 24px; 
+    line-height: 32px;
+   }
+
 } 
  
 @media(max-width:440px) {
@@ -960,14 +993,19 @@ ul .footer__social{
 
   .portfolio__numbers-item{ 
     width: 100%;
- }
-
+ } 
+  
 } 
  
-@media(max-width:340px) { 
+@media(max-width:340px) {  
+  
   .expertise__item{ 
     padding-left: 0; 
     padding-top: 60px;
-  } 
-  
+  }  
+   
+  .slider-blog {
+    padding: 50px 0;
+  }
+   
 }
