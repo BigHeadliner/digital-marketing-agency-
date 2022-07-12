@@ -1,5 +1,19 @@
 $(function(){   
  
+   $(".menu a, .go-top").on("click", function (event) {
+      //відміняєм стандартну обробку кліку по ссилці
+		event.preventDefault();
+
+      // забираєм індифікатор блоку з атрибутом href
+		var id  = $(this).attr('href'),
+
+      //дізнаємся висоту від початку сторінки до блоку на який зсилається якір
+			top = $(id).offset().top;
+		
+      //анімуєм перехід на відстань - top за 1500мс
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+    
 
   $('.slider-blog__inner').slick({ 
      dots:true, 
@@ -16,8 +30,8 @@ $(function(){
     ]
   });
  
-    $('.menu__btn').on('click', function(){ 
-       $('.header__top-inner').toggleClass('header__top-inner--active');
+    $('.menu__btn, .menu a').on('click', function(){ 
+       $('.header__top-inner').toggleClass('header__top-inner--active'); 
     });  
      
      
