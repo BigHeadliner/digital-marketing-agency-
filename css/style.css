@@ -764,14 +764,16 @@ ul .footer__social{
   .about__inner{ 
     display: block;
   } 
-  .about__title{ 
+  .about__title, 
+  .team__title{ 
     margin-bottom: 50px;
   } 
    
   .about, 
   .expertise, 
   .portfolio, 
-  .slider-blog{ 
+  .slider-blog, 
+  .team{ 
     padding: 75px 0;
   } 
    
@@ -791,7 +793,11 @@ ul .footer__social{
   .portfolio__filter-btn{ 
     margin-right: 0; 
   } 
-  
+   
+  .team__items{ 
+    gap: 20px;
+  }
+
 } 
  
 @media(max-width:992px){  
@@ -973,7 +979,22 @@ ul .footer__social{
    }
 
 } 
- 
+  
+@media(max-width:640px) {    
+
+  .team__items{ 
+    display:block;
+  }  
+   
+  .team__item{ 
+    margin-bottom: 25px;
+  } 
+   
+  .team__item img{ 
+    margin: 0 auto;
+  } 
+} 
+
 @media(max-width:440px) {
   .header__title {
     font-size: 36px;
@@ -998,7 +1019,7 @@ ul .footer__social{
 } 
  
 @media(max-width:340px) {  
-  
+
   .expertise__item{ 
     padding-left: 0; 
     padding-top: 60px;
